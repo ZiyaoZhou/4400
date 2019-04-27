@@ -29,7 +29,7 @@ ENGINE = InnoDB;
 -- Table `mydb`.`user`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `mydb`.`user` (
-  `id` VARCHAR(45) NOT NULL,
+  `id` INT NOT NULL,
   `username` VARCHAR(45) NOT NULL,
   `password` VARCHAR(45) NOT NULL,
   `email` VARCHAR(45) NOT NULL,
@@ -61,7 +61,7 @@ ENGINE = InnoDB;
 -- Table `mydb`.`item`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `mydb`.`item` (
-  `item_id` VARCHAR(45) NOT NULL,
+  `item_id` INT NOT NULL,
   `item_name` VARCHAR(45) NOT NULL,
   `market_value` DECIMAL(9) NOT NULL,
   `material` VARCHAR(45) NOT NULL,
@@ -79,7 +79,7 @@ ENGINE = InnoDB;
 -- Table `mydb`.`Order`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `mydb`.`Order` (
-  `order_id` VARCHAR(45) NOT NULL,
+  `order_id` INT NOT NULL,
   `Buyer_Username` VARCHAR(45) NULL,
   `Seller_Username` VARCHAR(45) NULL,
   `warehouse_location` VARCHAR(45) NOT NULL,
